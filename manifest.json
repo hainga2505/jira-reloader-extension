@@ -1,12 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "My Jira Reloader",
+  "name": "Auto Tab Reloader",
   "version": "1.0",
-  "description": "Tự động làm mới tab Jira Dashboard.",
+  "description": "Automatically reloads browser tabs at a given interval.",
   "permissions": [
     "alarms",
     "tabs",
-    "storage" 
+    "storage",
+    "notifications"
   ],
   "background": {
     "service_worker": "background.js"
@@ -14,6 +15,7 @@
   "action": {
     "default_popup": "popup.html"
   },
+  "options_page": "options.html",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
